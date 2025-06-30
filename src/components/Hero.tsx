@@ -13,11 +13,13 @@ const Hero = () => {
       <div className="absolute bottom-1/4 -right-20 w-96 h-96 bg-teal-500/20 rounded-full blur-3xl animate-pulse delay-1000" />
       
       <div className="max-w-4xl mx-auto text-center relative z-10">
-        {/* Profile Image Placeholder */}
+        {/* Profile Image */}
         <div className="w-32 h-32 mx-auto mb-8 rounded-full bg-gradient-to-r from-blue-500 to-teal-500 p-1">
-          <div className="w-full h-full rounded-full bg-slate-800 flex items-center justify-center text-4xl font-bold text-white">
-            TA
-          </div>
+          <img 
+            src="/lovable-uploads/a7595d25-6ef0-4f1c-9b04-7d9074c12441.png" 
+            alt="Thomas Appiah - Full-Stack Developer"
+            className="w-full h-full rounded-full object-cover"
+          />
         </div>
         
         <h1 className="text-5xl md:text-7xl font-bold text-white mb-4 animate-fade-in">

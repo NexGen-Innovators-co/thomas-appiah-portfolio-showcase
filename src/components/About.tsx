@@ -36,7 +36,7 @@ const About = () => {
           <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-teal-500 mx-auto"></div>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
           <div>
             <p className="text-lg text-slate-300 leading-relaxed mb-6">
               I'm an innovative Full-Stack Developer and Embedded Systems Engineer with a passion for creating 
@@ -67,6 +67,34 @@ const About = () => {
                 </CardContent>
               </Card>
             ))}
+          </div>
+        </div>
+
+        {/* Award Achievement Section */}
+        <div className="bg-slate-800/30 rounded-2xl p-8 border border-slate-700">
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div>
+              <div className="flex items-center gap-3 mb-4">
+                <Award className="w-8 h-8 text-yellow-500" />
+                <h3 className="text-2xl font-bold text-white">Innovation Achievement</h3>
+              </div>
+              <h4 className="text-xl text-blue-400 font-semibold mb-4">
+                5th Place - 9th UMaT Innovation & Career Fair 2025
+              </h4>
+              <p className="text-slate-300 leading-relaxed">
+                Our team's ANIWA Smart Lens System earned recognition at the prestigious UMaT Innovation Fair. 
+                This achievement highlights our commitment to developing assistive technologies that make a real 
+                difference in people's lives, particularly for the visually impaired community.
+              </p>
+            </div>
+            <div className="relative">
+              <img 
+                src="/lovable-uploads/c76743b2-105e-4c74-bdfa-108418083af0.png" 
+                alt="Thomas Appiah and team at UMaT Innovation & Career Fair 2025"
+                className="rounded-lg shadow-lg w-full h-auto"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-900/20 to-transparent rounded-lg"></div>
+            </div>
           </div>
         </div>
       </div>
