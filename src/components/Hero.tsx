@@ -1,4 +1,3 @@
-
 import { Github, Linkedin, Mail, MapPin, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -14,13 +13,15 @@ const Hero = () => {
       
       <div className="max-w-4xl mx-auto text-center relative z-10">
         {/* Profile Image */}
-        <div className="w-32 h-32 mx-auto mb-8 rounded-full bg-gradient-to-r from-blue-500 to-teal-500 p-1">
+        <div className="w-40 h-40 mx-auto mb-8 relative">
           <img 
             src="/lovable-uploads/a7595d25-6ef0-4f1c-9b04-7d9074c12441.png" 
             alt="Thomas Appiah - Full-Stack Developer"
-            className="w-full h-full rounded-full object-cover"
+            className="w-full h-full rounded-2xl object-cover shadow-2xl border-2 border-slate-700/50 hover:scale-105 transition-transform duration-300"
           />
+          <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-slate-900/20 to-transparent"></div>
         </div>
+        
         
         <h1 className="text-5xl md:text-7xl font-bold text-white mb-4 animate-fade-in">
           THOMAS APPIAH
