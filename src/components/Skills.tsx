@@ -1,48 +1,57 @@
 
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Code, Globe, Smartphone, Cpu, Eye, Database, Palette, Box } from "lucide-react";
 
 const Skills = () => {
   const skillCategories = [
     {
       title: "Programming Languages",
       skills: ["Python", "JavaScript/TypeScript", "Dart", "C/C++", "SQL"],
-      color: "from-blue-500 to-blue-600"
+      color: "from-blue-500 to-blue-600",
+      icon: Code
     },
     {
       title: "Web Development",
       skills: ["React", "Flask", "Node.js", "REST APIs", "WebSockets", "Socket.IO"],
-      color: "from-green-500 to-green-600"
+      color: "from-green-500 to-green-600",
+      icon: Globe
     },
     {
       title: "Mobile & Cross-Platform",
       skills: ["Flutter", "Cross-platform development", "Platform Channels"],
-      color: "from-purple-500 to-purple-600"
+      color: "from-purple-500 to-purple-600",
+      icon: Smartphone
     },
     {
       title: "Embedded Systems & IoT",
       skills: ["Raspberry Pi", "Arduino", "LoRa Communication", "GPIO", "I2C", "UART"],
-      color: "from-orange-500 to-orange-600"
+      color: "from-orange-500 to-orange-600",
+      icon: Cpu
     },
     {
       title: "AI/ML & Computer Vision",
       skills: ["YOLOv8", "OpenCV", "Tesseract OCR", "OpenAI Whisper"],
-      color: "from-red-500 to-red-600"
+      color: "from-red-500 to-red-600",
+      icon: Eye
     },
     {
       title: "Cloud & Database",
       skills: ["Firebase", "Heroku", "SQL Server", "SQLite", "Git/GitHub", "CI/CD"],
-      color: "from-teal-500 to-teal-600"
+      color: "from-teal-500 to-teal-600",
+      icon: Database
     },
     {
       title: "UI/UX & Styling",
       skills: ["Bootstrap", "Tailwind CSS", "Shadcn/UI", "Responsive design"],
-      color: "from-pink-500 to-pink-600"
+      color: "from-pink-500 to-pink-600",
+      icon: Palette
     },
     {
       title: "3D & Visualization",
       skills: ["Blender", "A-Frame", "WebGL", "Immersive technologies"],
-      color: "from-indigo-500 to-indigo-600"
+      color: "from-indigo-500 to-indigo-600",
+      icon: Box
     }
   ];
 
@@ -67,7 +76,7 @@ const Skills = () => {
             >
               <CardContent className="p-6">
                 <div className={`w-12 h-12 bg-gradient-to-r ${category.color} rounded-lg mb-4 flex items-center justify-center`}>
-                  <div className="w-6 h-6 bg-white rounded-sm"></div>
+                  <category.icon className="w-6 h-6 text-white" />
                 </div>
                 
                 <h3 className="text-xl font-semibold text-white mb-4">{category.title}</h3>
