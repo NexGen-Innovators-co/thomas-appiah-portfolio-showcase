@@ -89,23 +89,23 @@ const Projects = () => {
 
   return (
     <section className="py-32 px-4 relative overflow-hidden">
-      {/* Background Elements */}
-      <div className="absolute inset-0 bg-gradient-to-b from-slate-900/50 to-slate-800/30"></div>
-      <div className="absolute top-1/4 right-0 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-1/4 left-0 w-96 h-96 bg-teal-500/5 rounded-full blur-3xl"></div>
+        {/* Background Elements */}
+        <div className="absolute inset-0 bg-gradient-to-b from-slate-900/70 to-slate-800/60"></div>
+        <div className="absolute top-1/4 right-0 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-1/4 left-0 w-96 h-96 bg-violet-500/10 rounded-full blur-3xl"></div>
       
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Header */}
         <div className="mb-24">
           <div className="flex items-center gap-4 mb-8">
-            <div className="h-px bg-gradient-to-r from-transparent via-blue-500/50 to-transparent flex-1"></div>
-            <span className="text-blue-400 font-mono text-sm tracking-widest uppercase">Portfolio</span>
-            <div className="h-px bg-gradient-to-r from-transparent via-blue-500/50 to-transparent flex-1"></div>
+            <div className="h-px bg-gradient-to-r from-transparent via-emerald-500/50 to-transparent flex-1"></div>
+            <span className="text-emerald-400 font-mono text-sm tracking-widest uppercase">Portfolio</span>
+            <div className="h-px bg-gradient-to-r from-transparent via-emerald-500/50 to-transparent flex-1"></div>
           </div>
           
           <h2 className="text-6xl md:text-7xl font-bold text-white mb-6 tracking-tight">
             Selected
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-teal-400">
+            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-violet-400">
               Works
             </span>
           </h2>
@@ -130,12 +130,12 @@ const Projects = () => {
                 0{index + 1}
               </div>
               
-              <Card className="bg-slate-900/60 backdrop-blur-sm border-slate-700/50 hover:border-slate-600/50 transition-all duration-500 group-hover:bg-slate-800/60">
+              <Card className="bg-slate-900/80 backdrop-blur-sm border-slate-600/70 hover:border-slate-500/70 transition-all duration-500 group-hover:bg-slate-800/80">
                 <CardHeader className="pb-6">
                   <div className="flex items-start justify-between mb-4">
                     <div className="flex-1">
                       <div className="flex items-center gap-3 mb-3">
-                        <CardTitle className="text-2xl text-white group-hover:text-blue-400 transition-colors duration-300">
+                        <CardTitle className="text-2xl text-white group-hover:text-emerald-400 transition-colors duration-300">
                           {project.title}
                         </CardTitle>
                         {project.award && <Award className="w-6 h-6 text-amber-400" />}
@@ -146,7 +146,7 @@ const Projects = () => {
                           </div>
                         )}
                       </div>
-                      <p className="text-blue-400/90 font-medium text-base tracking-wide">{project.subtitle}</p>
+                      <p className="text-emerald-400/90 font-medium text-base tracking-wide">{project.subtitle}</p>
                     </div>
                     
                     {project.link && (
@@ -154,9 +154,9 @@ const Projects = () => {
                         href={project.link} 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="flex items-center justify-center w-12 h-12 rounded-xl bg-slate-700/50 hover:bg-blue-500/20 border border-slate-600/50 hover:border-blue-500/50 transition-all duration-300 group/link"
+                        className="flex items-center justify-center w-12 h-12 rounded-xl bg-slate-700/50 hover:bg-emerald-500/20 border border-slate-600/50 hover:border-emerald-500/50 transition-all duration-300 group/link"
                       >
-                        <ExternalLink className="w-5 h-5 text-slate-400 group-hover/link:text-blue-400 transition-colors" />
+                        <ExternalLink className="w-5 h-5 text-slate-400 group-hover/link:text-emerald-400 transition-colors" />
                       </a>
                     )}
                   </div>
@@ -175,8 +175,8 @@ const Projects = () => {
                         <h4 className="text-white font-semibold mb-4 text-lg">Core Features</h4>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                           {project.features.map((feature, featureIndex) => (
-                            <div key={featureIndex} className="flex items-center gap-3 p-3 rounded-lg bg-slate-800/40 hover:bg-slate-700/40 transition-colors">
-                              <div className="w-1.5 h-1.5 bg-gradient-to-r from-blue-400 to-teal-400 rounded-full"></div>
+                            <div key={featureIndex} className="flex items-center gap-3 p-3 rounded-lg bg-slate-800/60 hover:bg-slate-700/60 transition-colors">
+                              <div className="w-1.5 h-1.5 bg-gradient-to-r from-emerald-400 to-violet-400 rounded-full"></div>
                               <span className="text-slate-300 text-sm">{feature}</span>
                             </div>
                           ))}
@@ -192,7 +192,7 @@ const Projects = () => {
                           <Badge 
                             key={techIndex} 
                             variant="outline" 
-                            className="border-slate-600/50 text-slate-300 hover:border-blue-500/50 hover:text-blue-400 hover:bg-blue-500/5 transition-all duration-300 px-3 py-1"
+                            className="border-slate-600/50 text-slate-300 hover:border-emerald-500/50 hover:text-emerald-400 hover:bg-emerald-500/5 transition-all duration-300 px-3 py-1"
                           >
                             {tech}
                           </Badge>
@@ -210,7 +210,7 @@ const Projects = () => {
         <div className="mt-24 text-center">
           <div className="inline-flex items-center gap-4 px-8 py-4 rounded-full bg-slate-800/50 border border-slate-700/50">
             <span className="text-slate-300">Interested in collaboration?</span>
-            <a href="#contact" className="text-blue-400 hover:text-blue-300 transition-colors font-medium">
+            <a href="#contact" className="text-emerald-400 hover:text-emerald-300 transition-colors font-medium">
               Let's connect →
             </a>
           </div>

@@ -5,11 +5,11 @@ const Hero = () => {
   return (
     <section className="min-h-screen flex items-center justify-center px-4 relative overflow-hidden">
       {/* Animated Background Grid */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-teal-500/10"></div>
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/10 to-violet-500/10"></div>
         <div className="absolute inset-0" style={{
-          backgroundImage: `radial-gradient(circle at 25% 25%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
-                           radial-gradient(circle at 75% 75%, rgba(20, 184, 166, 0.1) 0%, transparent 50%)`,
+          backgroundImage: `radial-gradient(circle at 25% 25%, rgba(16, 185, 129, 0.08) 0%, transparent 50%),
+                           radial-gradient(circle at 75% 75%, rgba(139, 92, 246, 0.08) 0%, transparent 50%)`,
           backgroundSize: '400px 400px',
           animation: 'pulse 4s ease-in-out infinite alternate'
         }}></div>
@@ -17,16 +17,16 @@ const Hero = () => {
       
       {/* Floating Particles */}
       <div className="absolute inset-0">
-        <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-blue-400/30 rounded-full animate-bounce delay-1000"></div>
-        <div className="absolute top-1/3 right-1/3 w-1 h-1 bg-teal-400/40 rounded-full animate-bounce delay-2000"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-1.5 h-1.5 bg-blue-300/30 rounded-full animate-bounce delay-3000"></div>
-        <div className="absolute bottom-1/3 left-1/3 w-1 h-1 bg-teal-300/40 rounded-full animate-bounce delay-500"></div>
+        <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-emerald-400/40 rounded-full animate-bounce delay-1000"></div>
+        <div className="absolute top-1/3 right-1/3 w-1 h-1 bg-violet-400/50 rounded-full animate-bounce delay-2000"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-1.5 h-1.5 bg-emerald-300/40 rounded-full animate-bounce delay-3000"></div>
+        <div className="absolute bottom-1/3 left-1/3 w-1 h-1 bg-violet-300/50 rounded-full animate-bounce delay-500"></div>
       </div>
       
       {/* Dynamic Gradient Orbs */}
-      <div className="absolute top-0 -left-40 w-96 h-96 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-full blur-3xl animate-pulse"></div>
-      <div className="absolute bottom-0 -right-40 w-96 h-96 bg-gradient-to-l from-teal-500/20 to-blue-500/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-r from-blue-500/5 to-teal-500/5 rounded-full blur-3xl animate-spin" style={{animationDuration: '20s'}}></div>
+      <div className="absolute top-0 -left-40 w-96 h-96 bg-gradient-to-r from-emerald-500/15 to-teal-500/15 rounded-full blur-3xl animate-pulse"></div>
+      <div className="absolute bottom-0 -right-40 w-96 h-96 bg-gradient-to-l from-violet-500/15 to-purple-500/15 rounded-full blur-3xl animate-pulse delay-1000"></div>
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-r from-emerald-500/8 to-violet-500/8 rounded-full blur-3xl animate-spin" style={{animationDuration: '20s'}}></div>
       
       <div className="max-w-4xl mx-auto text-center relative z-10">
         {/* Profile Image */}
@@ -44,8 +44,8 @@ const Hero = () => {
           THOMAS APPIAH
         </h1>
         
-        <div className="text-xl md:text-2xl text-blue-400 mb-6 animate-fade-in delay-200">
-          <span className="bg-gradient-to-r from-blue-400 to-teal-400 bg-clip-text text-transparent font-semibold">
+        <div className="text-xl md:text-2xl text-emerald-400 mb-6 animate-fade-in delay-200">
+          <span className="bg-gradient-to-r from-emerald-400 to-violet-400 bg-clip-text text-transparent font-semibold">
             Full-Stack Developer | Embedded Systems Engineer | IoT Specialist
           </span>
         </div>
@@ -58,15 +58,15 @@ const Hero = () => {
         {/* Contact Info */}
         <div className="flex flex-wrap justify-center gap-6 mb-8 text-slate-300 animate-fade-in delay-400">
           <div className="flex items-center gap-2">
-            <MapPin className="w-4 h-4 text-blue-400" />
+            <MapPin className="w-4 h-4 text-emerald-400" />
             <span>Tarkwa, Ghana</span>
           </div>
           <div className="flex items-center gap-2">
-            <Phone className="w-4 h-4 text-blue-400" />
+            <Phone className="w-4 h-4 text-emerald-400" />
             <span>+233 271 692 568</span>
           </div>
           <div className="flex items-center gap-2">
-            <Mail className="w-4 h-4 text-blue-400" />
+            <Mail className="w-4 h-4 text-emerald-400" />
             <span>twenethomas36@gmail.com</span>
           </div>
         </div>
@@ -99,7 +99,7 @@ const Hero = () => {
           
           <Button 
             size="lg" 
-            className="bg-gradient-to-r from-blue-500 to-teal-500 hover:from-blue-600 hover:to-teal-600 text-white hover:scale-105 transition-all duration-300"
+            className="bg-gradient-to-r from-emerald-500 to-violet-500 hover:from-emerald-600 hover:to-violet-600 text-white hover:scale-105 transition-all duration-300"
             asChild
           >
             <a href="mailto:twenethomas36@gmail.com">

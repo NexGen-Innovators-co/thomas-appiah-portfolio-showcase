@@ -58,30 +58,30 @@ const Skills = () => {
   return (
     <section className="py-20 px-4 relative overflow-hidden">
       {/* Tech-inspired Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800/80 to-slate-900"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800/90 to-slate-900"></div>
       
       {/* Circuit Board Pattern */}
-      <div className="absolute inset-0 opacity-10">
+      <div className="absolute inset-0 opacity-15">
         <div className="absolute top-0 left-0 w-full h-full" style={{
-          backgroundImage: `linear-gradient(90deg, transparent 24%, rgba(59, 130, 246, 0.3) 25%, rgba(59, 130, 246, 0.3) 26%, transparent 27%, transparent 74%, rgba(20, 184, 166, 0.3) 75%, rgba(20, 184, 166, 0.3) 76%, transparent 77%, transparent),
-                           linear-gradient(transparent 24%, rgba(59, 130, 246, 0.3) 25%, rgba(59, 130, 246, 0.3) 26%, transparent 27%, transparent 74%, rgba(20, 184, 166, 0.3) 75%, rgba(20, 184, 166, 0.3) 76%, transparent 77%, transparent)`,
+          backgroundImage: `linear-gradient(90deg, transparent 24%, rgba(16, 185, 129, 0.4) 25%, rgba(16, 185, 129, 0.4) 26%, transparent 27%, transparent 74%, rgba(139, 92, 246, 0.4) 75%, rgba(139, 92, 246, 0.4) 76%, transparent 77%, transparent),
+                           linear-gradient(transparent 24%, rgba(16, 185, 129, 0.4) 25%, rgba(16, 185, 129, 0.4) 26%, transparent 27%, transparent 74%, rgba(139, 92, 246, 0.4) 75%, rgba(139, 92, 246, 0.4) 76%, transparent 77%, transparent)`,
           backgroundSize: '80px 80px'
         }}></div>
       </div>
       
       {/* Moving Code Elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/4 left-0 text-blue-500/20 font-mono text-xs animate-pulse">{"{ code: 'innovation' }"}</div>
-        <div className="absolute top-1/2 right-0 text-teal-500/20 font-mono text-xs animate-pulse delay-1000">{"<developer />"}</div>
-        <div className="absolute bottom-1/4 left-1/4 text-blue-400/20 font-mono text-xs animate-pulse delay-2000">{"function() { return 'future'; }"}</div>
+        <div className="absolute top-1/4 left-0 text-emerald-500/30 font-mono text-xs animate-pulse">{"{ code: 'innovation' }"}</div>
+        <div className="absolute top-1/2 right-0 text-violet-500/30 font-mono text-xs animate-pulse delay-1000">{"<developer />"}</div>
+        <div className="absolute bottom-1/4 left-1/4 text-emerald-400/30 font-mono text-xs animate-pulse delay-2000">{"function() { return 'future'; }"}</div>
       </div>
       
       {/* Binary Rain Effect */}
-      <div className="absolute inset-0 opacity-5 overflow-hidden">
+      <div className="absolute inset-0 opacity-10 overflow-hidden">
         <div className="absolute animate-pulse" style={{
           top: '10%', left: '10%', 
           fontFamily: 'monospace', 
-          color: 'rgba(59, 130, 246, 0.3)',
+          color: 'rgba(16, 185, 129, 0.4)',
           fontSize: '10px',
           lineHeight: '12px'
         }}>
@@ -90,7 +90,7 @@ const Skills = () => {
         <div className="absolute animate-pulse delay-1000" style={{
           top: '20%', right: '15%', 
           fontFamily: 'monospace', 
-          color: 'rgba(20, 184, 166, 0.3)',
+          color: 'rgba(139, 92, 246, 0.4)',
           fontSize: '10px',
           lineHeight: '12px'
         }}>
@@ -102,7 +102,7 @@ const Skills = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             Technical Expertise
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-teal-500 mx-auto mb-4"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-emerald-500 to-violet-500 mx-auto mb-4"></div>
           <p className="text-slate-300 text-lg max-w-2xl mx-auto">
             A comprehensive toolkit spanning full-stack development, embedded systems, and cutting-edge technologies
           </p>
@@ -112,7 +112,7 @@ const Skills = () => {
           {skillCategories.map((category, index) => (
             <Card 
               key={index} 
-              className="bg-slate-800/30 border-slate-700 hover:bg-slate-700/30 transition-all duration-300 hover:scale-105"
+              className="bg-slate-800/60 border-slate-600 hover:bg-slate-700/60 transition-all duration-300 hover:scale-105"
             >
               <CardContent className="p-6">
                 <div className={`w-12 h-12 bg-gradient-to-r ${category.color} rounded-lg mb-4 flex items-center justify-center`}>

@@ -29,17 +29,17 @@ const About = () => {
   return (
     <section className="py-20 px-4 relative overflow-hidden">
       {/* Dynamic Background Elements */}
-      <div className="absolute inset-0 bg-gradient-to-b from-slate-800/20 to-slate-900/40"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-slate-800/40 to-slate-900/60"></div>
       
       {/* Floating Geometric Shapes */}
-      <div className="absolute top-10 left-10 w-20 h-20 border border-blue-500/20 rotate-45 animate-spin" style={{animationDuration: '15s'}}></div>
-      <div className="absolute top-32 right-16 w-16 h-16 bg-teal-500/10 rotate-12 animate-pulse"></div>
-      <div className="absolute bottom-20 left-20 w-24 h-24 border-2 border-blue-400/15 rounded-full animate-bounce" style={{animationDuration: '6s'}}></div>
-      <div className="absolute bottom-40 right-12 w-12 h-12 bg-gradient-to-r from-blue-500/20 to-teal-500/20 transform rotate-45 animate-pulse delay-1000"></div>
+      <div className="absolute top-10 left-10 w-20 h-20 border border-emerald-500/30 rotate-45 animate-spin" style={{animationDuration: '15s'}}></div>
+      <div className="absolute top-32 right-16 w-16 h-16 bg-violet-500/20 rotate-12 animate-pulse"></div>
+      <div className="absolute bottom-20 left-20 w-24 h-24 border-2 border-emerald-400/25 rounded-full animate-bounce" style={{animationDuration: '6s'}}></div>
+      <div className="absolute bottom-40 right-12 w-12 h-12 bg-gradient-to-r from-emerald-500/30 to-violet-500/30 transform rotate-45 animate-pulse delay-1000"></div>
       
       {/* Subtle Grid Pattern */}
-      <div className="absolute inset-0 opacity-5" style={{
-        backgroundImage: 'linear-gradient(rgba(59, 130, 246, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(59, 130, 246, 0.1) 1px, transparent 1px)',
+      <div className="absolute inset-0 opacity-10" style={{
+        backgroundImage: 'linear-gradient(rgba(16, 185, 129, 0.2) 1px, transparent 1px), linear-gradient(90deg, rgba(16, 185, 129, 0.2) 1px, transparent 1px)',
         backgroundSize: '50px 50px'
       }}></div>
       <div className="max-w-6xl mx-auto">
@@ -47,7 +47,7 @@ const About = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
             About Me
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-teal-500 mx-auto"></div>
+          <div className="w-24 h-1 bg-gradient-to-r from-emerald-500 to-violet-500 mx-auto"></div>
         </div>
         
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
@@ -73,9 +73,9 @@ const About = () => {
           
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {highlights.map((highlight, index) => (
-              <Card key={index} className="bg-slate-800/50 border-slate-700 hover:bg-slate-700/50 transition-all duration-300 hover:scale-105">
+              <Card key={index} className="bg-slate-800/70 border-slate-600 hover:bg-slate-700/70 transition-all duration-300 hover:scale-105">
                 <CardContent className="p-6 text-center">
-                  <highlight.icon className="w-12 h-12 text-blue-400 mx-auto mb-4" />
+                  <highlight.icon className="w-12 h-12 text-emerald-400 mx-auto mb-4" />
                   <h3 className="text-white font-semibold mb-2">{highlight.title}</h3>
                   <p className="text-slate-400 text-sm">{highlight.description}</p>
                 </CardContent>
@@ -85,14 +85,14 @@ const About = () => {
         </div>
 
         {/* Award Achievement Section */}
-        <div className="bg-slate-800/30 rounded-2xl p-8 border border-slate-700">
+        <div className="bg-slate-800/60 rounded-2xl p-8 border border-slate-600">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <div className="flex items-center gap-3 mb-4">
-                <Award className="w-8 h-8 text-yellow-500" />
+                <Award className="w-8 h-8 text-amber-400" />
                 <h3 className="text-2xl font-bold text-white">Innovation Achievement</h3>
               </div>
-              <h4 className="text-xl text-blue-400 font-semibold mb-4">
+              <h4 className="text-xl text-emerald-400 font-semibold mb-4">
                 5th Place - 9th UMaT Innovation & Career Fair 2025
               </h4>
               <p className="text-slate-300 leading-relaxed">
