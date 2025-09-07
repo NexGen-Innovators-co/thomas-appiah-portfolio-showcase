@@ -4,12 +4,29 @@ import { Button } from "@/components/ui/button";
 const Hero = () => {
   return (
     <section className="min-h-screen flex items-center justify-center px-4 relative overflow-hidden">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 bg-grid-white/[0.02] bg-grid-pattern" />
+      {/* Animated Background Grid */}
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-teal-500/10"></div>
+        <div className="absolute inset-0" style={{
+          backgroundImage: `radial-gradient(circle at 25% 25%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
+                           radial-gradient(circle at 75% 75%, rgba(20, 184, 166, 0.1) 0%, transparent 50%)`,
+          backgroundSize: '400px 400px',
+          animation: 'pulse 4s ease-in-out infinite alternate'
+        }}></div>
+      </div>
       
-      {/* Gradient Orbs */}
-      <div className="absolute top-1/4 -left-20 w-96 h-96 bg-blue-500/20 rounded-full blur-3xl animate-pulse" />
-      <div className="absolute bottom-1/4 -right-20 w-96 h-96 bg-teal-500/20 rounded-full blur-3xl animate-pulse delay-1000" />
+      {/* Floating Particles */}
+      <div className="absolute inset-0">
+        <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-blue-400/30 rounded-full animate-bounce delay-1000"></div>
+        <div className="absolute top-1/3 right-1/3 w-1 h-1 bg-teal-400/40 rounded-full animate-bounce delay-2000"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-1.5 h-1.5 bg-blue-300/30 rounded-full animate-bounce delay-3000"></div>
+        <div className="absolute bottom-1/3 left-1/3 w-1 h-1 bg-teal-300/40 rounded-full animate-bounce delay-500"></div>
+      </div>
+      
+      {/* Dynamic Gradient Orbs */}
+      <div className="absolute top-0 -left-40 w-96 h-96 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-full blur-3xl animate-pulse"></div>
+      <div className="absolute bottom-0 -right-40 w-96 h-96 bg-gradient-to-l from-teal-500/20 to-blue-500/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-r from-blue-500/5 to-teal-500/5 rounded-full blur-3xl animate-spin" style={{animationDuration: '20s'}}></div>
       
       <div className="max-w-4xl mx-auto text-center relative z-10">
         {/* Profile Image */}

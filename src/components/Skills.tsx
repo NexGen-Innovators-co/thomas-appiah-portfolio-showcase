@@ -56,7 +56,47 @@ const Skills = () => {
   ];
 
   return (
-    <section className="py-20 px-4 bg-slate-900/50">
+    <section className="py-20 px-4 relative overflow-hidden">
+      {/* Tech-inspired Background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800/80 to-slate-900"></div>
+      
+      {/* Circuit Board Pattern */}
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute top-0 left-0 w-full h-full" style={{
+          backgroundImage: `linear-gradient(90deg, transparent 24%, rgba(59, 130, 246, 0.3) 25%, rgba(59, 130, 246, 0.3) 26%, transparent 27%, transparent 74%, rgba(20, 184, 166, 0.3) 75%, rgba(20, 184, 166, 0.3) 76%, transparent 77%, transparent),
+                           linear-gradient(transparent 24%, rgba(59, 130, 246, 0.3) 25%, rgba(59, 130, 246, 0.3) 26%, transparent 27%, transparent 74%, rgba(20, 184, 166, 0.3) 75%, rgba(20, 184, 166, 0.3) 76%, transparent 77%, transparent)`,
+          backgroundSize: '80px 80px'
+        }}></div>
+      </div>
+      
+      {/* Moving Code Elements */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute top-1/4 left-0 text-blue-500/20 font-mono text-xs animate-pulse">{"{ code: 'innovation' }"}</div>
+        <div className="absolute top-1/2 right-0 text-teal-500/20 font-mono text-xs animate-pulse delay-1000">{"<developer />"}</div>
+        <div className="absolute bottom-1/4 left-1/4 text-blue-400/20 font-mono text-xs animate-pulse delay-2000">{"function() { return 'future'; }"}</div>
+      </div>
+      
+      {/* Binary Rain Effect */}
+      <div className="absolute inset-0 opacity-5 overflow-hidden">
+        <div className="absolute animate-pulse" style={{
+          top: '10%', left: '10%', 
+          fontFamily: 'monospace', 
+          color: 'rgba(59, 130, 246, 0.3)',
+          fontSize: '10px',
+          lineHeight: '12px'
+        }}>
+          01010011<br/>01101111<br/>01100110<br/>01110100
+        </div>
+        <div className="absolute animate-pulse delay-1000" style={{
+          top: '20%', right: '15%', 
+          fontFamily: 'monospace', 
+          color: 'rgba(20, 184, 166, 0.3)',
+          fontSize: '10px',
+          lineHeight: '12px'
+        }}>
+          01001000<br/>01100001<br/>01110010<br/>01100100
+        </div>
+      </div>
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">

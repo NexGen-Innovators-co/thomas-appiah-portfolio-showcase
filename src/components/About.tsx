@@ -27,7 +27,21 @@ const About = () => {
   ];
 
   return (
-    <section className="py-20 px-4 relative">
+    <section className="py-20 px-4 relative overflow-hidden">
+      {/* Dynamic Background Elements */}
+      <div className="absolute inset-0 bg-gradient-to-b from-slate-800/20 to-slate-900/40"></div>
+      
+      {/* Floating Geometric Shapes */}
+      <div className="absolute top-10 left-10 w-20 h-20 border border-blue-500/20 rotate-45 animate-spin" style={{animationDuration: '15s'}}></div>
+      <div className="absolute top-32 right-16 w-16 h-16 bg-teal-500/10 rotate-12 animate-pulse"></div>
+      <div className="absolute bottom-20 left-20 w-24 h-24 border-2 border-blue-400/15 rounded-full animate-bounce" style={{animationDuration: '6s'}}></div>
+      <div className="absolute bottom-40 right-12 w-12 h-12 bg-gradient-to-r from-blue-500/20 to-teal-500/20 transform rotate-45 animate-pulse delay-1000"></div>
+      
+      {/* Subtle Grid Pattern */}
+      <div className="absolute inset-0 opacity-5" style={{
+        backgroundImage: 'linear-gradient(rgba(59, 130, 246, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(59, 130, 246, 0.1) 1px, transparent 1px)',
+        backgroundSize: '50px 50px'
+      }}></div>
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">

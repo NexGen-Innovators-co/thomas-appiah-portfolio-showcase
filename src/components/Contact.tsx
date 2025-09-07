@@ -47,9 +47,38 @@ const Contact = () => {
   ];
 
   return (
-    <section className="py-20 px-4 relative">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 bg-grid-white/[0.02]" />
+    <section className="py-20 px-4 relative overflow-hidden">
+      {/* Network Connection Background */}
+      <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-800/50 to-slate-900"></div>
+      
+      {/* Connection Lines */}
+      <div className="absolute inset-0 opacity-20">
+        <svg className="w-full h-full" viewBox="0 0 1200 800" fill="none">
+          <path d="M100,100 Q300,200 500,100 T900,200" stroke="rgba(59, 130, 246, 0.3)" strokeWidth="1" fill="none">
+            <animate attributeName="stroke-dasharray" values="0,1000;1000,1000;0,1000" dur="8s" repeatCount="indefinite"/>
+          </path>
+          <path d="M200,300 Q400,200 600,300 T1000,200" stroke="rgba(20, 184, 166, 0.3)" strokeWidth="1" fill="none">
+            <animate attributeName="stroke-dasharray" values="0,1000;1000,1000;0,1000" dur="10s" repeatCount="indefinite"/>
+          </path>
+          <path d="M150,500 Q350,400 550,500 T950,400" stroke="rgba(59, 130, 246, 0.2)" strokeWidth="1" fill="none">
+            <animate attributeName="stroke-dasharray" values="0,1000;1000,1000;0,1000" dur="12s" repeatCount="indefinite"/>
+          </path>
+        </svg>
+      </div>
+      
+      {/* Network Nodes */}
+      <div className="absolute top-20 left-20 w-3 h-3 bg-blue-500/50 rounded-full animate-pulse"></div>
+      <div className="absolute top-40 right-32 w-2 h-2 bg-teal-500/60 rounded-full animate-pulse delay-1000"></div>
+      <div className="absolute bottom-32 left-32 w-2.5 h-2.5 bg-blue-400/50 rounded-full animate-pulse delay-2000"></div>
+      <div className="absolute bottom-20 right-20 w-3 h-3 bg-teal-400/50 rounded-full animate-pulse delay-500"></div>
+      <div className="absolute top-1/2 left-1/4 w-2 h-2 bg-blue-300/60 rounded-full animate-pulse delay-1500"></div>
+      <div className="absolute top-1/3 right-1/3 w-2 h-2 bg-teal-300/60 rounded-full animate-pulse delay-3000"></div>
+      
+      {/* Subtle Grid Overlay */}
+      <div className="absolute inset-0 opacity-5" style={{
+        backgroundImage: 'radial-gradient(circle at 1px 1px, rgba(59, 130, 246, 0.3) 1px, transparent 0)',
+        backgroundSize: '40px 40px'
+      }}></div>
       
       <div className="max-w-4xl mx-auto relative z-10">
         <div className="text-center mb-16">
