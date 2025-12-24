@@ -52,7 +52,7 @@ const Experience = () => {
   ];
 
   const education = {
-    degree: "Bachelor of Science in Computer Engineering",
+    degree: "Bachelor of Science in Computer Science and Engineering",
     institution: "University of Mines and Technology",
     location: "Tarkwa, Ghana",
     status: "In Progress",

@@ -52,7 +52,7 @@ const Hero = () => {
         
         <p className="text-lg text-slate-300 mb-8 max-w-3xl mx-auto leading-relaxed animate-fade-in delay-300">
           Award-winning developer with expertise in IoT solutions, assistive technologies, and scalable web applications. 
-          Currently pursuing Computer Engineering while contributing to cutting-edge AgriIoT research.
+          Currently pursuing Computer Science and Engineering while contributing to cutting-edge AgriIoT research.
         </p>
         
         {/* Contact Info */}
