@@ -92,19 +92,19 @@ const Experience = () => {
             Experience & Education
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-emerald-500 to-violet-500 mx-auto mb-4"></div>
-          <p className="text-slate-300 text-lg max-w-2xl mx-auto">
+          <p className="text-slate-100 text-lg max-w-2xl mx-auto">
             Professional journey spanning research, education, and business leadership
           </p>
         </div>
         
         {/* Professional Experience */}
         <div className="mb-16">
-          <h3 className="text-2xl font-bold text-white mb-8">Professional Experience</h3>
+          <h3 className="text-2xl font-bold text-white mb-8 relative z-10">Professional Experience</h3>
           <div className="space-y-6">
             {experiences.map((exp, index) => (
               <Card 
                 key={index} 
-                className="bg-slate-800/60 border-slate-600 hover:bg-slate-700/60 transition-all duration-300"
+                className="bg-slate-800/80 border-slate-600 hover:bg-slate-700/80 transition-all duration-300 relative z-10"
               >
                 <CardHeader>
                   <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
@@ -122,15 +122,15 @@ const Experience = () => {
                     </div>
                     
                     <div className="flex flex-col md:items-end gap-2">
-                      <div className="flex items-center text-slate-400 text-sm">
+                      <div className="flex items-center text-slate-200 text-sm">
                         <CalendarDays className="w-4 h-4 mr-1" />
                         {exp.duration}
                       </div>
-                      <div className="flex items-center text-slate-400 text-sm">
+                      <div className="flex items-center text-slate-200 text-sm">
                         <MapPin className="w-4 h-4 mr-1" />
                         {exp.location}
                       </div>
-                      <Badge variant="outline" className="border-slate-600 text-slate-300 w-fit">
+                      <Badge variant="outline" className="border-slate-500 text-slate-100 w-fit">
                         {exp.type}
                       </Badge>
                     </div>
@@ -142,8 +142,8 @@ const Experience = () => {
                     <h4 className="text-white font-semibold mb-3">Key Achievements:</h4>
                     <ul className="space-y-2">
                       {exp.achievements.map((achievement, achIndex) => (
-                        <li key={achIndex} className="flex items-start text-slate-300">
-                          <div className="w-1.5 h-1.5 bg-blue-400 rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                        <li key={achIndex} className="flex items-start text-slate-100">
+                          <div className="w-1.5 h-1.5 bg-emerald-400 rounded-full mr-3 mt-2 flex-shrink-0"></div>
                           {achievement}
                         </li>
                       ))}
@@ -155,7 +155,7 @@ const Experience = () => {
                       <Badge 
                         key={techIndex} 
                         variant="secondary" 
-                        className="bg-slate-700/50 text-slate-200 hover:bg-slate-600/50"
+                        className="bg-slate-700/70 text-slate-50 hover:bg-slate-600/70"
                       >
                         {tech}
                       </Badge>
@@ -169,8 +169,8 @@ const Experience = () => {
         
         {/* Education */}
         <div>
-          <h3 className="text-2xl font-bold text-white mb-8">Education</h3>
-          <Card className="bg-slate-800/60 border-slate-600">
+          <h3 className="text-2xl font-bold text-white mb-8 relative z-10">Education</h3>
+          <Card className="bg-slate-800/80 border-slate-600 relative z-10">
             <CardHeader>
               <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
                 <div>
@@ -179,11 +179,11 @@ const Experience = () => {
                 </div>
                 
                 <div className="flex flex-col md:items-end gap-2">
-                  <div className="flex items-center text-slate-400 text-sm">
+                  <div className="flex items-center text-slate-200 text-sm">
                     <MapPin className="w-4 h-4 mr-1" />
                     {education.location}
                   </div>
-                  <Badge variant="outline" className="border-emerald-500/30 text-emerald-400 w-fit">
+                  <Badge variant="outline" className="border-emerald-500/50 text-emerald-300 w-fit bg-emerald-500/10">
                     {education.status}
                   </Badge>
                 </div>
@@ -191,7 +191,7 @@ const Experience = () => {
             </CardHeader>
             
             <CardContent>
-              <p className="text-slate-300">
+              <p className="text-slate-100">
                 <span className="font-semibold text-white">Focus Areas:</span> {education.focus}
               </p>
             </CardContent>
