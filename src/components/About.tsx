@@ -59,7 +59,7 @@ const About = () => {
             </p>
             
             <p className="text-lg text-slate-300 leading-relaxed mb-6">
-              Currently pursuing Computer Engineering at the University of Mines and Technology while contributing 
+              Currently pursuing Computer Science and Engineering at the University of Mines and Technology while contributing 
               to cutting-edge AgriIoT research. I believe in leveraging technology to solve meaningful problems 
               and create positive change in communities.
             </p>
