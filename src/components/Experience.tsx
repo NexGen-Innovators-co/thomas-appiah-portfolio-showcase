@@ -101,15 +101,15 @@ const Experience = () => {
                     </div>
                     
                     <div className="flex flex-col md:items-end gap-2">
-                      <div className="flex items-center text-slate-400 text-sm">
+                      <div className="flex items-center text-slate-300 text-sm">
                         <CalendarDays className="w-4 h-4 mr-1" />
                         {exp.duration}
                       </div>
-                      <div className="flex items-center text-slate-400 text-sm">
+                      <div className="flex items-center text-slate-300 text-sm">
                         <MapPin className="w-4 h-4 mr-1" />
                         {exp.location}
                       </div>
-                      <Badge variant="outline" className="border-slate-600 text-slate-300 w-fit">
+                      <Badge variant="outline" className="border-slate-500 text-white w-fit">
                         {exp.type}
                       </Badge>
                     </div>
@@ -121,8 +121,8 @@ const Experience = () => {
                     <h4 className="text-white font-semibold mb-3">Key Achievements:</h4>
                     <ul className="space-y-2">
                       {exp.achievements.map((achievement, achIndex) => (
-                        <li key={achIndex} className="flex items-start text-slate-300">
-                          <div className="w-1.5 h-1.5 bg-blue-400 rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                        <li key={achIndex} className="flex items-start text-white">
+                          <div className="w-1.5 h-1.5 bg-emerald-400 rounded-full mr-3 mt-2 flex-shrink-0"></div>
                           {achievement}
                         </li>
                       ))}
@@ -134,7 +134,7 @@ const Experience = () => {
                       <Badge 
                         key={techIndex} 
                         variant="secondary" 
-                        className="bg-slate-700/50 text-slate-200 hover:bg-slate-600/50"
+                        className="bg-slate-700 text-white hover:bg-slate-600"
                       >
                         {tech}
                       </Badge>
@@ -158,11 +158,11 @@ const Experience = () => {
                 </div>
                 
                 <div className="flex flex-col md:items-end gap-2">
-                  <div className="flex items-center text-slate-400 text-sm">
+                  <div className="flex items-center text-slate-300 text-sm">
                     <MapPin className="w-4 h-4 mr-1" />
                     {education.location}
                   </div>
-                  <Badge variant="outline" className="border-emerald-500/30 text-emerald-400 w-fit">
+                  <Badge variant="outline" className="border-emerald-500 text-emerald-400 w-fit">
                     {education.status}
                   </Badge>
                 </div>
@@ -170,8 +170,8 @@ const Experience = () => {
             </CardHeader>
             
             <CardContent>
-              <p className="text-slate-300">
-                <span className="font-semibold text-white">Focus Areas:</span> {education.focus}
+              <p className="text-white">
+                <span className="font-semibold text-emerald-400">Focus Areas:</span> {education.focus}
               </p>
             </CardContent>
           </Card>
