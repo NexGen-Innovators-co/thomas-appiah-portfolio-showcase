@@ -62,7 +62,7 @@ const Experience = () => {
   return (
     <section className="py-20 px-4 relative overflow-hidden">
       {/* Timeline-inspired Background */}
-      <div className="absolute inset-0 bg-gradient-to-b from-slate-800/60 via-slate-900/80 to-slate-800/60"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-slate-900/95 via-slate-800/95 to-slate-900/95"></div>
       
       {/* Vertical Timeline Elements */}
       <div className="absolute left-8 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-emerald-500/40 to-transparent"></div>
@@ -92,7 +92,7 @@ const Experience = () => {
             Experience & Education
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-emerald-500 to-violet-500 mx-auto mb-4"></div>
-          <p className="text-slate-300 text-lg max-w-2xl mx-auto">
+          <p className="text-slate-200 text-lg max-w-2xl mx-auto">
             Professional journey spanning research, education, and business leadership
           </p>
         </div>
@@ -104,7 +104,7 @@ const Experience = () => {
             {experiences.map((exp, index) => (
               <Card 
                 key={index} 
-                className="bg-slate-800/60 border-slate-600 hover:bg-slate-700/60 transition-all duration-300"
+                className="bg-slate-800/90 border-slate-600 hover:bg-slate-700/95 transition-all duration-300"
               >
                 <CardHeader>
                   <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
@@ -142,8 +142,8 @@ const Experience = () => {
                     <h4 className="text-white font-semibold mb-3">Key Achievements:</h4>
                     <ul className="space-y-2">
                       {exp.achievements.map((achievement, achIndex) => (
-                        <li key={achIndex} className="flex items-start text-slate-300">
-                          <div className="w-1.5 h-1.5 bg-blue-400 rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                        <li key={achIndex} className="flex items-start text-slate-200">
+                          <div className="w-1.5 h-1.5 bg-emerald-400 rounded-full mr-3 mt-2 flex-shrink-0"></div>
                           {achievement}
                         </li>
                       ))}
@@ -155,7 +155,7 @@ const Experience = () => {
                       <Badge 
                         key={techIndex} 
                         variant="secondary" 
-                        className="bg-slate-700/50 text-slate-200 hover:bg-slate-600/50"
+                        className="bg-slate-700/80 text-slate-100 hover:bg-slate-600/80"
                       >
                         {tech}
                       </Badge>
@@ -170,7 +170,7 @@ const Experience = () => {
         {/* Education */}
         <div>
           <h3 className="text-2xl font-bold text-white mb-8">Education</h3>
-          <Card className="bg-slate-800/60 border-slate-600">
+          <Card className="bg-slate-800/90 border-slate-600">
             <CardHeader>
               <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
                 <div>
@@ -191,7 +191,7 @@ const Experience = () => {
             </CardHeader>
             
             <CardContent>
-              <p className="text-slate-300">
+              <p className="text-slate-200">
                 <span className="font-semibold text-white">Focus Areas:</span> {education.focus}
               </p>
             </CardContent>
