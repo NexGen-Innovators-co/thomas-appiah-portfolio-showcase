@@ -9,7 +9,7 @@ const Projects = () => {
       title: "StudyHub Platform",
       subtitle: "Educational Learning Management System",
       description: "Comprehensive learning platform revolutionizing student engagement with interactive course management, real-time collaboration tools, and adaptive learning analytics.",
-      technologies: ["React", "Node.js", "MongoDB", "Socket.IO", "JWT", "Tailwind CSS"],
+      technologies: ["TypeScript", "React", "Node.js", "MongoDB", "Socket.IO", "Tailwind CSS"],
       features: [
         "Interactive course management system",
         "Real-time collaborative study rooms",
@@ -18,7 +18,34 @@ const Projects = () => {
         "Mobile-responsive design"
       ],
       link: "https://studdyhub.vercel.app",
+      github: "https://github.com/NexGen-Innovators-co/studdyhub_repo",
       status: "Live"
+    },
+    {
+      title: "Hub of Study Buddies",
+      subtitle: "Collaborative Learning Platform",
+      description: "A platform designed to connect students for collaborative learning experiences and study group formation.",
+      technologies: ["TypeScript", "React", "Tailwind CSS"],
+      features: [
+        "Study group matching",
+        "Collaborative tools",
+        "Real-time communication",
+        "Learning resource sharing"
+      ],
+      github: "https://github.com/NexGen-Innovators-co/hub-of-study-buddies"
+    },
+    {
+      title: "MedPrompt",
+      subtitle: "Personalized Medical Companion",
+      description: "A personalized medical companion application providing health guidance and medical information assistance.",
+      technologies: ["Dart", "Flutter", "C++", "CMake"],
+      features: [
+        "Personalized health recommendations",
+        "Medical information lookup",
+        "Cross-platform mobile app",
+        "Health tracking features"
+      ],
+      github: "https://github.com/NexGen-Innovators-co/medprompt"
     },
     {
       title: "ANIWA Smart Lens System",
@@ -31,59 +58,88 @@ const Projects = () => {
         "Flutter mobile companion app",
         "Text-to-speech navigation assistance"
       ],
+      github: "https://github.com/Twenethomas/aniwasmartlens",
       award: true
     },
     {
-      title: "TomChat - Real-time Messaging Platform",
+      title: "TomChat - Real-time Messaging",
       subtitle: "WhatsApp-like Communication System",
       description: "Full-featured messaging platform with real-time communication, friend requests, presence indicators, and cross-platform synchronization.",
-      technologies: ["Flask", "SQL Server", "React", "JavaFX", "WebSockets"],
+      technologies: ["Python", "Flask", "SQL Server", "React", "HTML", "JavaScript", "WebSockets"],
       features: [
         "Real-time messaging with WebSockets",
         "Friend request system",
         "Online presence indicators",
         "Web and desktop clients",
         "Message history management"
-      ]
+      ],
+      github: "https://github.com/Twenethomas/TomChatApp"
     },
     {
-      title: "AgroConnect Hub",
+      title: "AgriConnect Hub",
       subtitle: "Agricultural E-commerce Platform",
       description: "Responsive dashboard platform connecting farmers with buyers, featuring inventory management and secure transaction processing.",
-      technologies: ["React", "TypeScript", "Vite", "Tailwind CSS", "REST APIs"],
+      technologies: ["SCSS", "HTML", "JavaScript", "REST APIs"],
       features: [
         "Farmer-buyer connection platform",
         "Inventory management dashboard",
         "Secure authentication system",
         "Order processing workflow",
         "Responsive UI components"
-      ]
+      ],
+      github: "https://github.com/Twenethomas/AgriConnect-Hub"
     },
     {
-      title: "Corrosion Monitoring System",
-      subtitle: "IoT Environmental Monitoring",
-      description: "Real-time corrosion detection system using multiple environmental sensors with predictive risk assessment algorithms.",
-      technologies: ["Arduino Mega", "Multiple Sensors", "Data Visualization", "Predictive Analytics"],
+      title: "Dream House 3D",
+      subtitle: "Interactive House Visualization",
+      description: "A 3D house visualization and design project showcasing architectural concepts with interactive elements.",
+      technologies: ["HTML", "CSS", "JavaScript"],
       features: [
-        "Multi-sensor environmental monitoring",
-        "Real-time data visualization",
-        "Corrosion risk prediction",
-        "Magnetic field change detection",
-        "IoT dashboard interface"
-      ]
+        "3D house visualization",
+        "Interactive walkthrough",
+        "Responsive design",
+        "Architectural showcase"
+      ],
+      github: "https://github.com/Twenethomas/dreamHousefinished"
     },
     {
-      title: "3D Laboratory Simulation",
-      subtitle: "Immersive Educational Platform",
-      description: "Virtual science laboratory with detailed 3D models and interactive learning environments for educational purposes.",
-      technologies: ["Blender", "A-Frame", "WebGL", "3D Modeling"],
+      title: "House Simulation in A-Frame",
+      subtitle: "Immersive VR Experience",
+      description: "Virtual reality house simulation built with A-Frame, providing an immersive 3D walkthrough experience.",
+      technologies: ["JavaScript", "A-Frame", "WebGL", "3D Modeling"],
       features: [
-        "Immersive 3D laboratory environment",
-        "Interactive learning simulations",
+        "VR-ready house simulation",
+        "Interactive 3D environment",
         "Web-based platform",
-        "Real-time user interactions",
-        "Educational content integration"
-      ]
+        "Immersive walkthrough"
+      ],
+      github: "https://github.com/Twenethomas/House_simulation_in_aframe"
+    },
+    {
+      title: "Adventist Royal Academy",
+      subtitle: "School Website",
+      description: "Professional website for Adventist Royal Academy, a basic school, featuring modern design and information management.",
+      technologies: ["PHP", "JavaScript", "HTML", "CSS"],
+      features: [
+        "School information portal",
+        "Dynamic content management",
+        "Contact and enrollment forms",
+        "Responsive design"
+      ],
+      github: "https://github.com/Twenethomas/Adventistroyal"
+    },
+    {
+      title: "Aracan",
+      subtitle: "Web Application",
+      description: "A modern web application built with SCSS and JavaScript for enhanced user experience.",
+      technologies: ["SCSS", "HTML", "JavaScript"],
+      features: [
+        "Modern UI design",
+        "Responsive layout",
+        "Interactive components",
+        "Clean architecture"
+      ],
+      github: "https://github.com/Twenethomas/aracan"
     }
   ];
 
@@ -149,16 +205,28 @@ const Projects = () => {
                       <p className="text-emerald-400/90 font-medium text-base tracking-wide">{project.subtitle}</p>
                     </div>
                     
-                    {project.link && (
-                      <a 
-                        href={project.link} 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="flex items-center justify-center w-12 h-12 rounded-xl bg-slate-700/50 hover:bg-emerald-500/20 border border-slate-600/50 hover:border-emerald-500/50 transition-all duration-300 group/link"
-                      >
-                        <ExternalLink className="w-5 h-5 text-slate-400 group-hover/link:text-emerald-400 transition-colors" />
-                      </a>
-                    )}
+                    <div className="flex gap-2">
+                      {project.github && (
+                        <a 
+                          href={project.github} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="flex items-center justify-center w-12 h-12 rounded-xl bg-slate-700/50 hover:bg-violet-500/20 border border-slate-600/50 hover:border-violet-500/50 transition-all duration-300 group/link"
+                        >
+                          <Github className="w-5 h-5 text-slate-400 group-hover/link:text-violet-400 transition-colors" />
+                        </a>
+                      )}
+                      {project.link && (
+                        <a 
+                          href={project.link} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="flex items-center justify-center w-12 h-12 rounded-xl bg-slate-700/50 hover:bg-emerald-500/20 border border-slate-600/50 hover:border-emerald-500/50 transition-all duration-300 group/link"
+                        >
+                          <ExternalLink className="w-5 h-5 text-slate-400 group-hover/link:text-emerald-400 transition-colors" />
+                        </a>
+                      )}
+                    </div>
                   </div>
                 </CardHeader>
                 
