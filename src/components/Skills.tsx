@@ -7,7 +7,7 @@ const Skills = () => {
   const skillCategories = [
     {
       title: "Programming Languages",
-      skills: ["Python", "JavaScript/TypeScript", "Dart", "C/C++", "SQL"],
+      skills: ["Python", "JavaScript/TypeScript", "Dart", "C/C++", "Java", "SQL"],
       color: "from-blue-500 to-blue-600",
       icon: Code
     },
