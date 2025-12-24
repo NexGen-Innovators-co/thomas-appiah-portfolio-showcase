@@ -1,7 +1,7 @@
 
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Mail, MapPin, Phone, Send } from "lucide-react";
+import { Github, Linkedin, Mail, MapPin, Phone, Send, MessageCircle, Twitter, Instagram } from "lucide-react";
 
 const Contact = () => {
   const contactInfo = [
@@ -27,22 +27,46 @@ const Contact = () => {
 
   const socialLinks = [
     {
-      icon: Github,
-      label: "GitHub",
-      href: "https://github.com/Twenethomas",
-      color: "hover:text-gray-400"
+      icon: MessageCircle,
+      label: "WhatsApp",
+      href: "https://wa.me/233271692568",
+      color: "hover:text-green-500",
+      bgHover: "hover:bg-green-500/20"
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
       href: "https://linkedin.com/in/thomas-appiah",
-      color: "hover:text-blue-400"
+      color: "hover:text-blue-500",
+      bgHover: "hover:bg-blue-500/20"
+    },
+    {
+      icon: Github,
+      label: "GitHub",
+      href: "https://github.com/Twenethomas",
+      color: "hover:text-gray-300",
+      bgHover: "hover:bg-gray-500/20"
+    },
+    {
+      icon: Twitter,
+      label: "Twitter/X",
+      href: "https://twitter.com/twenethomas",
+      color: "hover:text-sky-400",
+      bgHover: "hover:bg-sky-500/20"
+    },
+    {
+      icon: Instagram,
+      label: "Instagram",
+      href: "https://instagram.com/twenethomas",
+      color: "hover:text-pink-500",
+      bgHover: "hover:bg-pink-500/20"
     },
     {
       icon: Mail,
       label: "Email",
       href: "mailto:twenethomas36@gmail.com",
-      color: "hover:text-green-400"
+      color: "hover:text-emerald-400",
+      bgHover: "hover:bg-emerald-500/20"
     }
   ];
 
@@ -128,16 +152,17 @@ const Contact = () => {
             {/* Social Links */}
             <div>
               <h4 className="text-lg font-semibold text-white mb-4">Connect on Social</h4>
-              <div className="flex gap-4">
+              <div className="grid grid-cols-3 gap-3">
                 {socialLinks.map((social, index) => (
                   <a
                     key={index}
                     href={social.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`p-3 rounded-lg bg-slate-800/30 border border-slate-700 hover:bg-slate-700/30 hover:border-emerald-500/30 text-slate-400 ${social.color} transition-all duration-300 hover:scale-110`}
+                    className={`flex flex-col items-center gap-2 p-4 rounded-lg bg-slate-800/50 border border-slate-700 ${social.bgHover} hover:border-emerald-500/50 text-slate-400 ${social.color} transition-all duration-300 hover:scale-105`}
                   >
                     <social.icon className="w-6 h-6" />
+                    <span className="text-xs font-medium">{social.label}</span>
                   </a>
                 ))}
               </div>
